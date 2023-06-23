@@ -1,46 +1,61 @@
 import React from 'react';
+import Link from 'next/link';
 import classes from './styles.module.scss';
-// import profile from '../../images/profile.jpeg';
-// import { Menu } from '../../types/menu';
+import profile from '../../images/profile.jpeg';
+import settings from '../../images/settings.png';
 
 const MainMenu: React.FC = () => {
-  // const items: Menu[] = [
-  //   {
-  //     id: 1,
-  //     title: '',
-  //     link: '',
-  //   },
-  //   {
-  //     id: 2,
-  //     title: '',
-  //     link: '',
-  //   },
-  //   {
-  //     id: 3,
-  //     title: '',
-  //     link: '',
-  //   },
-  //   {
-  //     id: 4,
-  //     title: '',
-  //     link: '',
-  //   },
-  //   {
-  //     id: 5,
-  //     title: '',
-  //     link: '',
-  //   },
-  // ];
+  const items = [
+    {
+      id: 1,
+      title: 'Прихід',
+      link: '',
+    },
+    {
+      id: 2,
+      title: 'Групи',
+      link: '',
+    },
+    {
+      id: 3,
+      title: 'Продукти',
+      link: '',
+    },
+    {
+      id: 4,
+      title: 'Користувачі',
+      link: '',
+    },
+    {
+      id: 5,
+      title: 'Настройки',
+      link: '',
+    },
+  ];
 
   return (
     <div className={classes.menu}>
       <div className={classes.profileImage}>
-        {/* <img
+        <img
           className={classes.profile}
           src={profile}
-          alt="Profile photo"
-        /> */}
+          alt="Profile"
+        />
+        <img
+          className={classes.settings}
+          src={settings}
+          alt="Settings"
+        />
       </div>
+      <nav className={classes.nav}>
+        <ul className={classes.navList}>
+          {items.map((item) => (
+            <li className={classes.navItem} key={item.id}>
+              <Link className={classes.navLink} href={item.link}>{item.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </div>
   );
 };
