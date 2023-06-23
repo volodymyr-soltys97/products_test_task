@@ -14,9 +14,6 @@ const TopMenu: React.FC = () => {
     setCurrentDate(timeNow);
   }, []);
 
-  // eslint-disable-next-line no-console
-  console.log(formatDate(currentDate));
-
   return (
     <header className={classes.header}>
       <div className={classes.header__container}>

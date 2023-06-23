@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 250px;
+  background-color: #fffcfc;
+  height: 100%;
+  box-shadow: 5px 1px 22px 3px rgba(168,168,168,0.77);
+  padding-top: 100px;
+}
+
+.profileImage {
+  position: relative;
+
+  .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+}
