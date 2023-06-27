@@ -3,33 +3,34 @@ import Link from 'next/link';
 import classes from './styles.module.scss';
 import profile from '../../images/profile.jpeg';
 import settings from '../../images/settings.png';
+import { Routes } from '../../types/menu';
 
-const MainMenu: React.FC = () => {
+const NavigationMenu: React.FC = () => {
   const items = [
     {
       id: 1,
       title: 'Прихід',
-      link: '',
+      link: Routes.COMING,
     },
     {
       id: 2,
       title: 'Групи',
-      link: '',
+      link: Routes.GROUPS,
     },
     {
       id: 3,
       title: 'Продукти',
-      link: '',
+      link: Routes.PRODUCTS,
     },
     {
       id: 4,
       title: 'Користувачі',
-      link: '',
+      link: Routes.USERS,
     },
     {
       id: 5,
       title: 'Настройки',
-      link: '',
+      link: Routes.SETTINGS,
     },
   ];
 
@@ -60,4 +61,4 @@ const MainMenu: React.FC = () => {
   );
 };
 
-export default MainMenu;
+export default NavigationMenu;

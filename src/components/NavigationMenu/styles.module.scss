@@ -66,7 +66,6 @@ li {
         text-decoration: none;
         text-transform: uppercase;
         color: #000;
-        transition: font-weight 0.3s;
 
         &::after {
           content: "";
@@ -80,8 +79,6 @@ li {
         }
 
         &:hover {
-          font-weight: 600;
-          transition: font-weight 0.3s;
           &::after {
             opacity: 1;
             transition: opacity 0.3s;
