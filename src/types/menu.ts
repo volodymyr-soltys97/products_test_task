@@ -4,7 +4,7 @@ export interface Menu {
   link: string;
 }
 
-export enum Routes {
+export enum RoutesLinks {
   COMING = '/coming/',
   GROUPS = '/groups/',
   PRODUCTS = '/products/',

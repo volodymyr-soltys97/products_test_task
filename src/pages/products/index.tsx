@@ -1,12 +1,12 @@
 import React from 'react';
 import classes from '../../styles/pages.module.scss';
 
-const Coming = () => {
+const Products = () => {
   return (
     <div className={classes.container}>
-      Coming Page
+      Products Page
     </div>
   );
 };
 
-export default Coming;
+export default Products;

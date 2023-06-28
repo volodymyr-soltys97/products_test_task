@@ -1,12 +1,12 @@
 import React from 'react';
 import classes from '../../styles/pages.module.scss';
 
-const Coming = () => {
+const Groups = () => {
   return (
     <div className={classes.container}>
-      Coming Page
+      Groups Page
     </div>
   );
 };
 
-export default Coming;
+export default Groups;
