@@ -14,7 +14,7 @@ export interface Products {
   guarantee: Guarantee;
   id: number;
   isNew: number;
-  order: 1;
+  order: number;
   photo: string;
   price: Price[];
   serialNumber: number;
