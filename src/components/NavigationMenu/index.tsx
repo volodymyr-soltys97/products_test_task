@@ -1,5 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
+import { Link } from 'react-router-dom';
 import classes from './styles.module.scss';
 import profile from '../../images/profile.jpeg';
 import settings from '../../images/settings.png';
@@ -52,7 +53,7 @@ const NavigationMenu: React.FC = () => {
         <ul className={classes.navList}>
           {items.map((item) => (
             <li className={classes.navItem} key={item.id}>
-              <Link className={classes.navLink} href={item.link}>{item.title}</Link>
+              <Link className={classes.navLink} to={item.link}>{item.title}</Link>
             </li>
           ))}
         </ul>

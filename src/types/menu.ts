@@ -5,9 +5,9 @@ export interface Menu {
 }
 
 export enum RoutesLinks {
-  COMING = '/coming/',
-  GROUPS = '/groups/',
-  PRODUCTS = '/products/',
-  USERS = '/users/',
+  COMING = '/pages/coming/',
+  GROUPS = '/pages/groups/',
+  PRODUCTS = '/pages/products/',
+  USERS = '/pages/users/',
   SETTINGS = '/settings/',
 }
